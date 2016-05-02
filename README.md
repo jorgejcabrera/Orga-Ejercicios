@@ -15,3 +15,6 @@ ssh -p 2222 root@127.0.0.1
 
 ####pasar el arch desde host al guest
 scp -P2222 -r ./tp1.s root@127.0.0.1:/root
+
+####para compilar en netbsd
+gcc -Wall -g -o a8s Factorial.c factorial.S
