@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : MyStrlen.c
+ Name        : StrRev.c
  Author      : Jorge
  Version     :
  Copyright   : Your copyright notice
@@ -11,20 +11,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*int my_strlen_utf8_c(char *s){
-	int i = 0, j = 0;
-	while (s[i]) {
-		if ((s[i] & 0xc0) != 0x80) j++;
-		i++;
+/*char* strrev(char *p){
+	char *s = p;
+	char *e = p + strlen(p) - 1;
+	while (s < e){
+		char a = *s;
+		*s = *e;
+		*e = a;
+		s++, e--;
 	}
-	return j;
+	return p;
 }*/
 
-extern int my_strlen_utf8_c(char *s);
+extern char* strrev(char *s);
 
 int main(void) {
-	char* myString = "my string is too long";
-	int myStringLen = my_strlen_utf8_c(myString);
-	printf("%d\n", myStringLen);
+	char* myString = "this";
+	char* revString = strrev(myString);
+	printf("%c\n",revString[0]);
 	return EXIT_SUCCESS;
 }
