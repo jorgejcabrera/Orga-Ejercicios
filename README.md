@@ -18,7 +18,7 @@ Ejercicios de organización de datos - MIPS
 
 ## Análisis con Cachegrid :+1:
 El módulo Cachegrid de [Valgrind](http://valgrind.org/) nos permite observar las referencias a memoria por instrucciones y datos, y los misses en los distintos niveles de caché. 
-Cachegrind denomina LL al cache de ´ultimo nivel - Last Level - que podría ser L2 o L3 dependiendo de la computadora bajo estudio
+Cachegrind denomina LL al cache de ´ultimo nivel - Last Level - que podría ser L2 o L3 dependiendo de la computadora bajo estudio.
 
 Ejemplo:
 
