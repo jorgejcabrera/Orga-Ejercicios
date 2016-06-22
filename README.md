@@ -16,7 +16,7 @@ Ejercicios de organización de datos - MIPS
 ######Pasar el arch desde host al guest
 >scp -P2222 -r ./tp1.s root@127.0.0.1:/root
 
-## Análisis con Cachegrid
+## Análisis con Cachegrid :+1:
 El módulo Cachegrid de [Valgrind](http://valgrind.org/) nos permite observar las referencias a memoria por instrucciones y datos, y los misses en los distintos niveles de caché. 
 Cachegrind denomina LL al cache de ´ultimo nivel - Last Level - que podr´a ser L2 o L3 dependiendo de la computadora bajo estudio
 Ejemplo:
@@ -31,4 +31,4 @@ valgrind --tool=cachegrind ./Factorial < archivoDeEntrada.txt > archivoSalida.ou
 si compilamos con la opción -g podemos ejecutar `cg_annotate` para obtener una presentación detallada del profiling realizado con cachegrind.
 ```
 cg_annotate --auto=yes cachegrind.out.5537
-	```
+```
